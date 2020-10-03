@@ -1,0 +1,15 @@
+{% extends 'editor/layout.html' %}
+
+{% block title %}
+    {{ entrytitle }} Not Found!
+{% endblock %}
+{% block body %}
+    <h1><i>There is no entry for {{ entrytitle }}</i></h1>
+    <h3>Looks weird -_- ...</h3>
+
+
+    <br>
+    <p>Don't worry, if the entry does not exist we can Create One</p>
+    <p><b>Click <a href="#">Here</a></b> to make a new entry.</p>
+
+{% endblock %}

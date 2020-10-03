@@ -1,0 +1,20 @@
+{% extends "editor/layout.html" %}
+
+{% block title %}
+    MarkDown Editor
+{% endblock %}
+
+{% block body %}
+{% if search %}
+    <h2>Search Results for "{{ value }}"</h2>
+{% else %}
+    <h1>All Pages ({{ length }})</h1>
+{% endif %}
+
+    <ul>
+        {% for entry in entries %}
+            <a href="{% url 'entry' entry %}"><li>{{ entry }}</li></a>
+        {% endfor %}
+    </ul>
+
+{% endblock %}

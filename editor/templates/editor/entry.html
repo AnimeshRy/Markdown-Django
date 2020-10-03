@@ -1,0 +1,15 @@
+{% extends "editor/layout.html" %}
+
+{% block title %}
+    {{ entrytitle }}
+{% endblock %}
+
+
+{% block body %}
+<div>
+    <a href="{% url 'editEntry' entrytitle %}" class="btn btn-secondary" role="button">Edit</a>
+    <a href="{% url 'delete' entrytitle %}" role="button" class="btn btn-danger">Delete</a>
+</div>
+<br>
+    {{ entry|safe }}
+{% endblock %}
