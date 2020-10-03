@@ -1,7 +1,7 @@
 # Markdown Editor
 A simple Markdown Editor Web App 
 
-This is a simple Markdown Editor App (something like Dillinger) but used the markdown2 python library and is build with Django.
+This is a simple Markdown Editor App similar to Dillinger but uses the markdown2 python library and is build with Django.
 
 ## Working
 
@@ -12,7 +12,7 @@ This is a simple Markdown Editor App (something like Dillinger) but used the mar
 - Used Markdown2 [Library](https://pypi.org/project/markdown2/)
 - CRUD
 - Simple UI
-- Uses local Storage
+- Uses Default local Storage
 
 ## Setup
 
